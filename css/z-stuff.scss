@@ -1,0 +1,43 @@
+#z-slash {
+  display: block;
+  position: relative;
+  max-height: 0;
+  max-width: 0;
+  line-height: 0;
+  inset: 50% auto auto 50%;
+}
+#z-slash::after {
+  content: "/";
+  position: absolute;
+  display: block;
+  left: 0;
+  transform: skew(-83deg, 30deg) scale(.4);
+  color: #c09;
+  -webkit-text-fill-color: initial;
+}
+
+.reveal .z-text {
+  background: #CC0099;
+  background: linear-gradient(to right, #CC0099 0%, #FFE435 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: none;
+  filter: drop-shadow(2px 2px 0 #810061) drop-shadow(1px 1px 1px #c09);
+}
+
+.reveal .z-agenda {
+  display: flex;
+  justify-content: space-between;
+}
+.reveal .z-agenda > div {
+  text-align: left;
+}
+
+.reveal .z-sub {
+  font-size: 50%;
+}
+
+.reveal .z-cheek {
+  vertical-align: middle;
+  color: #888;
+}
