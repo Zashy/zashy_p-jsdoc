@@ -11,45 +11,138 @@
 		<link rel="stylesheet" href="dist/theme/blood.css">
 
 		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+		<link rel="stylesheet" href="plugin/highlight/base-16-pico.css">
 	</head>
 	<body>
 		<div class="reveal">
 			<div class="slides">
 				<section>
-					<h1 class="z-text">Types <span id="z-slash"></span> Docs</h1>
+					<h1 class="z-text">Docs <span id="z-slash"></span> Types</h1>
 					<footer>
 						<p>— Zashy Lavin</p>
 					</footer>
 				</section>
-				<section>
+				<section data-background-image="./images/Dystopika-background.jpg">
 					<h2>Agenda</h2>
 					<div class="z-agenda">
-						<div>
-							<h3>Docs</h3>
-							<ul>
-								<li>What is JSDoc?</li>
-								<li>So what?</li>
-							</ul>
-							<h3>Types</h3>
-							<ul>
-								<li>How?</li>
-							</ul>
-						</div><div>
-							<h3>Docs</h3>
-							<ul>
-								<li>Generation</li>
-								<li>Templates</li>
-							</ul>
-							<h3>Types</h3>
-							<ul>
-								<li>Oh, typescript exists</li>
-							</ul>
-						</div>
+						<h3>Docs<code>/</code></h3>
+						<ul>
+							<li>What is JSDoc?</li>
+							<li>So what?</li>
+						</ul>
+						<h3>Types<code>/</code></h3>
+						<ul>
+							<li>How?</li>
+						</ul>
+						<h3>Docs<code>/</code></h3>
+						<ul>
+							<li>Generation</li>
+							<li>Templates</li>
+						</ul>
+						<h3>Types<code>/</code></h3>
+						<ul>
+							<li>Oh, typescript exists</li>
+						</ul>
 					</div>
 				</section>
 
-				<section>
+				<section data-background-image="./images/Dystopika-background_r.jpg">
+					<pre>
+						<code>
+							/** What is JSDoc? */
+						</code>
+					</pre>
+					<h4 class="fragment">☝ Oh<code>/</code> that.</h4>
+				</section>
+				<section data-background-image="./images/Dystopika-background_r.jpg">
+					<h3>So<code>/</code> what?</h3>
+					<ul>
+						<li>JavaDoc</li>
+						<li>Documentation</li>
+						<li class="z-nest"><ul>
+							<li>Quality</li>
+							<li>Onboarding</li>
+							<li>Maintenance</li>
+						</ul></li>
+					</ul>
+				</section>
+				<section data-background-image="./images/Dystopika-background_r.jpg">
+					<h3>So<code>/</code> what?</h3>
+					<ul>
+						<li>Types!</li>
+					</ul>
+					<pre><code class="language-javascript">
+/**
+ * Finds and returns a summary of the most recent character
+ *
+ * @param {Character[]} characters - array of characters to search
+ * @returns {Summary} - summary of most recent character
+ */
+export function findMostRecent (characters) {}
+					</code></pre>
+				</section>
+
+				<section data-background-image="./images/Dystopika-background_b.jpg">
+					<h2>Types<code>/</code> how?</h2>
+					<p>
+						Lots of ways to document code <code>@param</code>, <code>@callback</code>, <code>@enum</code>, etc.
+					</p>
+					<p>
+						Adding types uses type expressions which boil down to the type wrapped in curly braces: <code>{string}</code>
+					</p>
+				</section>
+				<section data-background-image="./images/Dystopika-background_b.jpg">
+					<h2>Types<code>/</code> how?</h2>
+					<pre><code class="language-javascript">
+/**
+ * @property {string} value
+ * @param {Object} config
+ * ***
+ * @prop {int} c
+ * @arg {number} pi
+ * @argument {boolean|undefined} isValid
+ * @type {Array&lt;Component>} children
+ * @typedef {import('@types/d3')} D3
+ */
+					</code></pre>
+				</section>
+
+				<section data-background-image="./images/Dystopika-background_r1.jpg">
+					<h2>Doc<code>/</code> Generation</h2>
+					<p>You can generate documentation from the comments!</p>
+					<img class="r-stretch" src="./images/Character-typedef.png" alt="generated JSDoc documentation for a function" />
+				</section>
+				<section data-background-image="./images/Dystopika-background_r1.jpg">
+					<h2>Doc<code>/</code> Generation</h2>
+					<ul>
+						<li>Yeah, it looks pretty bleh 😱</li>
+						<li>Mostly useful for documenting modules</li>
+					</ul>
+				</section>
+				<section data-background-image="./images/Dystopika-background_r1.jpg">
+					<h2>Doc<code>/</code> Templates</h2>
+					<div class="z-compare">
+						<img src="./images/findMostRecent-A.png" alt="default generated JSDoc of a function">
+						<img src="./images/findMostRecent-B.png" alt="generated JSDoc of a function using a template to change the look">
+					</div>
+				</section>
+				<section data-background-image="./images/Dystopika-background_r1.jpg">
+					<h2>Doc<code>/</code> Styling</h2>
+					<ul>
+						<li>It just generates HTML</li>
+						<li>So show off those 🔮✨<span class="z-rainbow">
+							<span>C</span><span>S</span><span>S</span><span> </span><span>s</span><span>k</span><span>i</span><span>l</span><span>l</span><span>s</span><span>!</span>
+						</span></li>
+						<li class="fragment">Message me, I'm good at CSS</li>
+					</ul>
+				</section>
+
+				<section data-background-image="./images/Dystopika-background.jpg">
+					<h3>Thanks<code>/</code></h3>
+					<p>So short... 🐛</p>
+				</section>
+
+				<section data-background-image="./images/Dystopika-background_b1.jpg">
 					<h2><sub class="z-sub">Oh, yeah</sub> Typescript</h2>
 					<p>
 						Yup, it exists.
@@ -58,7 +151,7 @@
 						Supports a lot more stuff
 					</p>
 				</section>
-				<section>
+				<section data-background-image="./images/Dystopika-background_b1.jpg">
 					<h2>Typescript <small class="fragment z-cheek" data-fragment-index="1">JSDoc</small></h2>
 					<h3>Pros</h3>
 					<ul>
@@ -73,13 +166,15 @@
 						<li>Confusing errors <small class="fragment z-cheek" data-fragment-index="1">at least it's documented</small></li>
 					</ul>
 				</section>
-				<section>
+				<section data-background-image="./images/Dystopika-background.jpg">
 					<h2>Thanks!</h2>
 
 					<ul>
 						<li>Slides: <a href="https://github.com/Zashy/zashy_p-jsdoc">https://github.com/Zashy/zashy_p-jsdoc</a></li>
 						<li>Examples: <a href="https://github.com/Zashy/zashy_d_jsdoc">https://github.com/Zashy/zashy_d_jsdoc</a></li>
+						<li>JSDoc: <a href="https://jsdoc.app/">https://jsdoc.app/</a></li>
 						<li>Addendum (🧼): <a href="todo">todo</a></li>
+						<li>Backgrounds: <a href="https://dystopika.com/">https://dystopika.com</a></li>
 					</ul>
 				</section>
 			</div>
