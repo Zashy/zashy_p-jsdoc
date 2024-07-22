@@ -1,77 +1,77 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js - JSDoc</title>
+	<title>reveal.js - JSDoc</title>
 
-		<link rel="stylesheet" href="dist/reset.css">
-		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/blood.css">
+	<link rel="stylesheet" href="dist/reset.css">
+	<link rel="stylesheet" href="dist/reveal.css">
+	<link rel="stylesheet" href="dist/theme/blood.css">
 
-		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/base-16-pico.css">
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>
-					<h1 class="z-text">Docs <span id="z-slash"></span> Types</h1>
-					<footer>
-						<p>— Zashy Lavin</p>
-					</footer>
-				</section>
-				<section data-background-image="./images/Dystopika-background.jpg">
-					<h2>Agenda</h2>
-					<div class="z-agenda">
-						<h3>Docs<code>/</code></h3>
-						<ul>
-							<li>What is JSDoc?</li>
-							<li>So what?</li>
-						</ul>
-						<h3>Types<code>/</code></h3>
-						<ul>
-							<li>How?</li>
-						</ul>
-						<h3>Docs<code>/</code></h3>
-						<ul>
-							<li>Generation</li>
-							<li>Templates</li>
-						</ul>
-						<h3>Types<code>/</code></h3>
-						<ul>
-							<li>Oh, typescript exists</li>
-						</ul>
-					</div>
-				</section>
+	<!-- Theme used for syntax highlighted code -->
+	<link rel="stylesheet" href="plugin/highlight/base-16-pico.css">
+</head>
+<body>
+<div class="reveal">
+	<div class="slides">
+		<section>
+			<h1 class="z-text">Docs <span id="z-slash"></span> Types</h1>
+			<footer>
+				<p>— Zashy Lavin</p>
+			</footer>
+		</section>
+		<section data-background-image="./images/Dystopika-background.jpg">
+			<h2>Agenda</h2>
+			<div class="z-agenda">
+				<h3>Docs<code>/</code></h3>
+				<ul>
+					<li>What is JSDoc?</li>
+					<li>So what?</li>
+				</ul>
+				<h3>Types<code>/</code></h3>
+				<ul>
+					<li>How?</li>
+				</ul>
+				<h3>Docs<code>/</code></h3>
+				<ul>
+					<li>Generation</li>
+					<li>Templates</li>
+				</ul>
+				<h3>Types<code>/</code></h3>
+				<ul>
+					<li>Oh, typescript exists</li>
+				</ul>
+			</div>
+		</section>
 
-				<section data-background-image="./images/Dystopika-background_r.jpg">
+		<section data-background-image="./images/Dystopika-background_r.jpg">
 					<pre>
 						<code>
 							/** What is JSDoc? */
 						</code>
 					</pre>
-					<h4 class="fragment">☝ Oh<code>/</code> that.</h4>
-				</section>
-				<section data-background-image="./images/Dystopika-background_r.jpg">
-					<h3>So<code>/</code> what?</h3>
-					<ul>
-						<li>JavaDoc</li>
-						<li>Documentation</li>
-						<li class="z-nest"><ul>
-							<li>Quality</li>
-							<li>Onboarding</li>
-							<li>Maintenance</li>
-						</ul></li>
-					</ul>
-				</section>
-				<section data-background-image="./images/Dystopika-background_r.jpg">
-					<h3>So<code>/</code> what?</h3>
-					<ul>
-						<li>Types!</li>
-					</ul>
-					<pre><code class="language-javascript">
+			<h4 class="fragment">☝ Oh<code>/</code> that.</h4>
+		</section>
+		<section data-background-image="./images/Dystopika-background_r.jpg">
+			<h3>So<code>/</code> what?</h3>
+			<ul>
+				<li>JavaDoc</li>
+				<li>Documentation</li>
+				<li class="z-nest"><ul>
+					<li>Quality</li>
+					<li>Onboarding</li>
+					<li>Maintenance</li>
+				</ul></li>
+			</ul>
+		</section>
+		<section data-background-image="./images/Dystopika-background_r.jpg">
+			<h3>So<code>/</code> what?</h3>
+			<ul>
+				<li>Types!</li>
+			</ul>
+			<pre><code class="language-javascript">
 /**
  * Finds and returns a summary of the most recent character
  *
@@ -80,20 +80,20 @@
  */
 export function findMostRecent (characters) {}
 					</code></pre>
-				</section>
+		</section>
 
-				<section data-background-image="./images/Dystopika-background_b.jpg">
-					<h2>Types<code>/</code> how?</h2>
-					<p>
-						Lots of ways to document code <code>@param</code>, <code>@callback</code>, <code>@enum</code>, etc.
-					</p>
-					<p>
-						Adding types uses type expressions which boil down to the type wrapped in curly braces: <code>{string}</code>
-					</p>
-				</section>
-				<section data-background-image="./images/Dystopika-background_b.jpg">
-					<h2>Types<code>/</code> how?</h2>
-					<pre><code class="language-javascript">
+		<section data-background-image="./images/Dystopika-background_b.jpg">
+			<h2>Types<code>/</code> how?</h2>
+			<p>
+				Lots of ways to document code <code>@param</code>, <code>@callback</code>, <code>@enum</code>, etc.
+			</p>
+			<p>
+				Adding types uses type expressions which boil down to the type wrapped in curly braces: <code>{string}</code>
+			</p>
+		</section>
+		<section data-background-image="./images/Dystopika-background_b.jpg">
+			<h2>Types<code>/</code> how?</h2>
+			<pre><code class="language-javascript">
 /**
  * @property {string} value
  * @param {Object} config
@@ -102,98 +102,155 @@ export function findMostRecent (characters) {}
  * @arg {number} pi
  * @argument {boolean|undefined} isValid
  * @type {Array&lt;Component>} children
+ * ***
  * @typedef {import('@types/d3')} D3
  */
 					</code></pre>
-				</section>
-
-				<section data-background-image="./images/Dystopika-background_r1.jpg">
-					<h2>Doc<code>/</code> Generation</h2>
-					<p>You can generate documentation from the comments!</p>
-					<img class="r-stretch" src="./images/Character-typedef.png" alt="generated JSDoc documentation for a function" />
-				</section>
-				<section data-background-image="./images/Dystopika-background_r1.jpg">
-					<h2>Doc<code>/</code> Generation</h2>
-					<ul>
-						<li>Yeah, it looks pretty bleh 😱</li>
-						<li>Mostly useful for documenting modules</li>
-					</ul>
-				</section>
-				<section data-background-image="./images/Dystopika-background_r1.jpg">
-					<h2>Doc<code>/</code> Templates</h2>
-					<div class="z-compare">
-						<img src="./images/findMostRecent-A.png" alt="default generated JSDoc of a function">
-						<img src="./images/findMostRecent-B.png" alt="generated JSDoc of a function using a template to change the look">
-					</div>
-				</section>
-				<section data-background-image="./images/Dystopika-background_r1.jpg">
-					<h2>Doc<code>/</code> Styling</h2>
-					<ul>
-						<li>It just generates HTML</li>
-						<li>So show off those 🔮✨<span class="z-rainbow">
+		</section>
+		<section data-background-image="./images/Dystopika-background_b.jpg">
+			<h2>Types<code>/</code> how?</h2>
+			<pre><code class="language-javascript">
+/** Sorts a given array of characters by popularity.
+ *
+ * @param {Character[]} characters - array of characters
+ * @returns {Character[]} - new sorted array of characters
+ */
+export function sortByMostPopularity (characters) {
+  /** Compares two characters returning integer representing
+	 * the signed position for sorting.
+   *
+   * @param {Character} characterA
+   * @param {Character} characterB
+   * @returns {int}
+   */
+  function compareCharacters (characterA, characterB) {
+    return characterA.popularity - characterB.popularity
+  }
+  return characters.sort(compareCharacters)
+}
+					</code></pre>
+		</section>
+		<section data-background-image="./images/Dystopika-background_r1.jpg">
+			<h2>Doc<code>/</code> Generation</h2>
+			<p>You can generate documentation from the comments!</p>
+			<img class="r-stretch" src="./images/Character-typedef.png" alt="generated JSDoc documentation for a function" />
+		</section>
+		<section data-background-image="./images/Dystopika-background_r1.jpg">
+			<h2>Doc<code>/</code> Generation</h2>
+			<ul>
+				<li>Yeah, it looks pretty bleh 😱</li>
+				<li>Mostly useful for documenting modules</li>
+			</ul>
+		</section>
+		<section data-background-image="./images/Dystopika-background_r1.jpg">
+			<h2>Doc<code>/</code> Templates</h2>
+			<div class="z-compare">
+				<img src="./images/findMostRecent-A.png" alt="default generated JSDoc of a function">
+				<img src="./images/findMostRecent-B.png" alt="generated JSDoc of a function using a template to change the look">
+			</div>
+		</section>
+		<section data-background-image="./images/Dystopika-background_r1.jpg">
+			<h2>Doc<code>/</code> Styling</h2>
+			<ul>
+				<li>It just generates HTML</li>
+				<li>So show off those 🔮✨<span class="z-rainbow">
 							<span>C</span><span>S</span><span>S</span><span> </span><span>s</span><span>k</span><span>i</span><span>l</span><span>l</span><span>s</span><span>!</span>
 						</span></li>
-						<li class="fragment">Message me, I'm good at CSS</li>
-					</ul>
-				</section>
+				<li class="fragment">Message me, I'm good at CSS</li>
+			</ul>
+		</section>
 
-				<section data-background-image="./images/Dystopika-background.jpg">
-					<h3>Thanks<code>/</code></h3>
-					<p>So short... 🐛</p>
-				</section>
+		<section data-background-image="./images/Dystopika-background.jpg">
+			<h3>Thanks<code>/</code></h3>
+			<p>So short... 🐛</p>
+		</section>
 
-				<section data-background-image="./images/Dystopika-background_b1.jpg">
-					<h2><sub class="z-sub">Oh, yeah</sub> Typescript</h2>
-					<p>
-						Yup, it exists.
-					</p>
-					<p class="fragment">
-						Supports a lot more stuff
-					</p>
-				</section>
-				<section data-background-image="./images/Dystopika-background_b1.jpg">
-					<h2>Typescript <small class="fragment z-cheek" data-fragment-index="1">JSDoc</small></h2>
-					<h3>Pros</h3>
-					<ul>
-						<li>Types <small class="fragment z-cheek" data-fragment-index="1">yup</small></li>
-						<li>Less code bugs <small class="fragment z-cheek" data-fragment-index="1">should help here</small></li>
-						<li>GraphQL integration <small class="fragment z-cheek" data-fragment-index="1">can't easily do that<span class="fragment highlight-red" data-fragment-index="1">*</span></small></li>
-					</ul>
-					<h3>Cons</h3>
-					<ul>
-						<li>Lift to start using <small class="fragment z-cheek" data-fragment-index="1">just a comment</small></li>
-						<li>Typing all the things <small class="fragment z-cheek" data-fragment-index="1">add wherever</small></li>
-						<li>Confusing errors <small class="fragment z-cheek" data-fragment-index="1">at least it's documented</small></li>
-					</ul>
-				</section>
-				<section data-background-image="./images/Dystopika-background.jpg">
-					<h2>Thanks!</h2>
-
-					<ul>
-						<li>Slides: <a href="https://github.com/Zashy/zashy_p-jsdoc">https://github.com/Zashy/zashy_p-jsdoc</a></li>
-						<li>Examples: <a href="https://github.com/Zashy/zashy_d_jsdoc">https://github.com/Zashy/zashy_d_jsdoc</a></li>
-						<li>JSDoc: <a href="https://jsdoc.app/">https://jsdoc.app/</a></li>
-						<li>Addendum (🧼): <a href="todo">todo</a></li>
-						<li>Backgrounds: <a href="https://dystopika.com/">https://dystopika.com</a></li>
-					</ul>
-				</section>
+		<section data-background-image="./images/Dystopika-background_b1.jpg">
+			<h2><sub class="z-sub">Oh, yeah</sub> Typescript</h2>
+			<p>
+				Yup, it exists.
+			</p>
+			<p class="fragment">
+				Supports a lot more stuff
+			</p>
+		</section>
+		<section data-background-image="./images/Dystopika-background_b1.jpg">
+			<h2>Typescript<code>/</code> <small class="fragment z-cheek" data-fragment-index="1">JSDoc</small></h2>
+			<h3>Pros</h3>
+			<ul>
+				<li>Types <small class="fragment z-cheek" data-fragment-index="1">yup</small></li>
+				<li>Less code bugs <small class="fragment z-cheek" data-fragment-index="1">should help here</small></li>
+				<li>GraphQL integration <small class="fragment z-cheek" data-fragment-index="1">can't easily do that<span class="fragment highlight-red" data-fragment-index="1">*</span></small></li>
+			</ul>
+			<h3>Cons</h3>
+			<ul>
+				<li>Lift to start using <small class="fragment z-cheek" data-fragment-index="1">just a comment</small></li>
+				<li>Typing all the things <small class="fragment z-cheek" data-fragment-index="1">add wherever</small></li>
+				<li>Confusing errors <small class="fragment z-cheek" data-fragment-index="1">at least it's documented</small></li>
+			</ul>
+		</section>
+		<section data-background-image="./images/Dystopika-background_b1.jpg">
+			<h2>Typescript<code>/</code> JSDocs</h2>
+			<div class="r-stack">
+						<pre><code class="language-javascript">
+/**
+ * @typedef {import('@types/d3')} D3
+ */
+/**
+ * @param {D3} d3
+ * @returns {void}
+ */
+function makeChart (d3) {}
+						</code></pre>
+				<img class="fragment" src="./images/d3.jpg" alt="VS Code showing D3 IntelliSense " />
 			</div>
-		</div>
+		</section>
+		<section data-background-image="./images/Dystopika-background_b1.jpg">
+			<h2>Typescript<code>/</code> Casting</h2>
+			<pre><code class="language-javascript">
+/**
+ * @param {number} num
+ * @returns {number}
+ */
+function bar (num) {}
+/**
+ * @param {unknown} arg
+ * @returns {number}
+ */
+function foo (arg) {
+  const num = /** @type{number} */ (arg)
+  return bar(num)
+}
+					</code></pre>
+		</section>
+		<section data-background-image="./images/Dystopika-background.jpg">
+			<h2>Thanks!</h2>
 
-		<script src="dist/reveal.js"></script>
-		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
-		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				hash: true,
+			<ul>
+				<li>Slides: <a href="https://github.com/Zashy/zashy_p-jsdoc">https://github.com/Zashy/zashy_p-jsdoc</a></li>
+				<li>Examples: <a href="https://github.com/Zashy/zashy_d_jsdoc">https://github.com/Zashy/zashy_d_jsdoc</a></li>
+				<li>JSDoc: <a href="https://jsdoc.app/">https://jsdoc.app/</a></li>
+				<li>Addendum (🧼): <a href="todo">todo</a></li>
+				<li>Backgrounds: <a href="https://dystopika.com/">https://dystopika.com</a></li>
+			</ul>
+		</section>
+	</div>
+</div>
 
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
-			});
-		</script>
-	</body>
+<script src="dist/reveal.js"></script>
+<script src="plugin/notes/notes.js"></script>
+<script src="plugin/markdown/markdown.js"></script>
+<script src="plugin/highlight/highlight.js"></script>
+<script>
+	// More info about initialization & config:
+	// - https://revealjs.com/initialization/
+	// - https://revealjs.com/config/
+	Reveal.initialize({
+		hash: true,
+
+		// Learn about plugins: https://revealjs.com/plugins/
+		plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+	});
+</script>
+</body>
 </html>
